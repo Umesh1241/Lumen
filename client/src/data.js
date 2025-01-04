@@ -1,35 +1,42 @@
-// src/productsData.js
 export const productsData = [
   {
     "id": 1,
-    "name": "Product 1",
+    "name": "Router",
     "price": 29.99,
-    "holder": "Brand A",
+    "holder": "Networking",
     "inStock": true,
+    "availability": 50,
+    "reorderPoint": 10,
     "image": "https://via.placeholder.com/150"
   },
   {
     "id": 2,
-    "name": "Product 2",
+    "name": "Switch",
     "price": 49.99,
-    "holder": "Brand B",
+    "holder": "Networking",
     "inStock": false,
+    "availability": 30,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
     "id": 3,
-    "name": "Product 3",
+    "name": "Ethernet Cable",
     "price": 19.99,
-    "holder": "Brand C",
+    "holder": "Accessories",
     "inStock": true,
+    "availability": 200,
+    "reorderPoint": 20,
     "image": "https://via.placeholder.com/150"
   },
   {
     "id": 4,
-    "name": "Product 4",
+    "name": "Firewall Appliance",
     "price": 99.99,
-    "holder": "Brand D",
+    "holder": "Security",
     "inStock": true,
+    "availability": 10,
+    "reorderPoint": 2,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -38,6 +45,8 @@ export const productsData = [
     "price": 59.99,
     "holder": "Brand E",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -46,6 +55,8 @@ export const productsData = [
     "price": 89.99,
     "holder": "Brand F",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -54,6 +65,8 @@ export const productsData = [
     "price": 199.99,
     "holder": "Brand G",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -62,6 +75,8 @@ export const productsData = [
     "price": 109.99,
     "holder": "Brand H",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -70,6 +85,8 @@ export const productsData = [
     "price": 59.99,
     "holder": "Brand I",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -78,6 +95,8 @@ export const productsData = [
     "price": 29.99,
     "holder": "Brand J",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -86,6 +105,8 @@ export const productsData = [
     "price": 79.99,
     "holder": "Brand K",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -94,6 +115,8 @@ export const productsData = [
     "price": 129.99,
     "holder": "Brand L",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -102,6 +125,8 @@ export const productsData = [
     "price": 139.99,
     "holder": "Brand M",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -110,6 +135,8 @@ export const productsData = [
     "price": 219.99,
     "holder": "Brand N",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -118,6 +145,8 @@ export const productsData = [
     "price": 199.99,
     "holder": "Brand O",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -126,6 +155,8 @@ export const productsData = [
     "price": 399.99,
     "holder": "Brand P",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -134,6 +165,8 @@ export const productsData = [
     "price": 299.99,
     "holder": "Brand Q",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -142,6 +175,8 @@ export const productsData = [
     "price": 499.99,
     "holder": "Brand R",
     "inStock": false,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -150,6 +185,8 @@ export const productsData = [
     "price": 159.99,
     "holder": "Brand S",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   },
   {
@@ -158,6 +195,8 @@ export const productsData = [
     "price": 79.99,
     "holder": "Brand T",
     "inStock": true,
+    "availability": 20,
+    "reorderPoint": 5,
     "image": "https://via.placeholder.com/150"
   }
 ];

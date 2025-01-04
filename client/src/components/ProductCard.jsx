@@ -16,8 +16,9 @@ const ProductCard = ({ product, handleDelete }) => {
   />
   <div className="mt-4">
     <h3 className="text-xl font-semibold">{product.name}</h3>
-    <p className="text-gray-500">{product.holder}</p>
-    <p className="text-lg font-bold text-blue-600">${product.price}</p>
+    <p className="text-gray-500">Category: {" "}{product.holder}</p>
+    <p className="">stockLevel: {product.availability}</p>
+    <p className="text-gray-700">Reorder Point: {product.reorderPoint}</p>
     <p
       className={`mt-2 ${
         product.inStock ? "text-green-500" : "text-red-500"

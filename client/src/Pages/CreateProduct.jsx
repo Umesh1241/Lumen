@@ -1,45 +1,33 @@
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom'; 
-import { productsData } from '../data';  
+import React, { useState } from 'react'
 import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom';
 
-const UpdateProducts = () => {
-  const { id } = useParams(); 
-  const navigate = useNavigate();
-  const productToUpdate = productsData.find(product => product.id === parseInt(id, 10));
-  const [formData, setFormData] = useState({
-    name: productToUpdate?.name || '',
-    holder: productToUpdate?.holder || '',
-    inStock: productToUpdate?.inStock || false,
-    availability: productToUpdate?.availability ||'',
-    reorderPoint: productToUpdate?.reorderPoint ||'',
-    image: productToUpdate?.image || '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Updated product:', formData);
-
-    navigate('/products');
-  };
-
-  if (!productToUpdate) {
-    return <p>Product not found.</p>;
-  }
-
+const CreateProduct = () => {
+    const [formData, setFormData] = useState({
+      name: '',
+      holder: '',
+      inStock: false,
+      availability: '',
+      reorderPoint: '',
+      image: '',
+    })
+    const navigate = useNavigate();
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData({
+          ...formData,
+          [name]: type === 'checkbox' ? checked : value,
+        });
+      };
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      navigate('/products')
+    }
   return (
     <>   
     <Header/>
      <div className="max-w-lg mx-auto p-4 mt-7 bg-gray-100 border border-gray-300 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Update Product</h2>
+      <h2 className="text-2xl font-bold mb-4">Create Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-semibold">
@@ -57,7 +45,7 @@ const UpdateProducts = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="holder" className="block text-gray-700 font-semibold">
-            category:
+            Category:
           </label>
           <input
             type="text"
@@ -85,7 +73,7 @@ const UpdateProducts = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="price" className="block text-gray-700 font-semibold">
-            Stock Level:
+            stockLevel:
           </label>
           <input
             type="number"
@@ -128,12 +116,12 @@ const UpdateProducts = () => {
           type="submit"
           className="w-full py-2 text-white rounded-lg bg-red-500"
         >
-          Update Product
+          Create Product
         </button>
       </form>
     </div>
     </>
-  );
-};
+  )
+}
 
-export default UpdateProducts;
+export default CreateProduct;
