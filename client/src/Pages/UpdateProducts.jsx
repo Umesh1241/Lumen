@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; 
 import { productsData } from '../data';  
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const UpdateProducts = () => {
   const { id } = useParams(); 
@@ -38,7 +39,7 @@ const UpdateProducts = () => {
   return (
     <>   
     <Header/>
-     <div className="max-w-lg mx-auto p-4 mt-7 bg-gray-100 border border-gray-300 rounded-lg shadow-lg">
+     <div className="max-w-lg mx-auto p-4 mt-7 bg-gray-100 border border-gray-300 rounded-lg shadow-lg mb-3">
       <h2 className="text-2xl font-bold mb-4">Update Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -132,6 +133,7 @@ const UpdateProducts = () => {
         </button>
       </form>
     </div>
+    <Footer/>
     </>
   );
 };
