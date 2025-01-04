@@ -10,6 +10,7 @@ const Header = () => {
         </Link>
 
         <div className="flex space-x-6 text-red-500">
+          <Link to="/" >Home</Link>
           <Link to="/about" >About</Link>
           <Link to="/products">Products</Link>
           <Link to="/supplier-orders">Supplier Orders</Link>
